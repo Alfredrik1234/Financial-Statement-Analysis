@@ -40,7 +40,15 @@ The dataset used in this project was sourced from Kaggle, a widely recognized pl
 
 Unlike standard datasets that focus solely on top-line revenue, this source provides a granular look at the friction points between operations and liquidity. It includes:
 
-The dataset was selected for its relevance to real-world business scenarios, particularly in risk management and audit analysis. It provides a comprehensive view of how different factors—such as AI usage and employee workload—can influence operational performance and financial outcomes.
+
+***Operational Cycle Metrics:*** Data on debtor collection timelines and cash conversion cycles to identify where capital is trapped.
+
+***Structural Leverage Data:*** Detailed balance sheet figures used to calculate debt-to-equity ratios and evaluate insolvency risks.
+
+***Profitability and Margin Trends:*** Comparative annual and quarterly profit and loss statements that reveal net profit contractions despite sales stability. 
+
+***Fundamental Health Scores:*** Market-leading indicators, such as the Altman Z-Score and Piotroski G-Factor, paired with real-time price-to-earning (PE) multiples from price_final.xlsx.  
+
 
 Before analysis, the data was reviewed and prepared to ensure consistency and accuracy. This included handling missing values, validating data types, and structuring the dataset for efficient querying in SQL and visualization in Power BI.
 
@@ -54,9 +62,9 @@ Overall, the dataset offers a solid foundation for deriving actionable insights 
 ### Data Cleaning/Preparation
 Before conducting the analysis, the dataset was carefully cleaned and prepared to ensure accuracy, consistency, and reliability of the results. The data, sourced from Kaggle, was initially reviewed to understand its structure, data types, and any potential quality issues.
 
-The cleaning process involved handling missing and inconsistent values, particularly in key fields such as revenue impact, audit effectiveness, and client satisfaction scores. Data types were standardized (e.g., converting numerical and date fields into appropriate formats) to ensure smooth analysis in SQL and Power BI. Duplicate records were checked and removed where necessary to avoid skewed results.
+To transform the raw financial records of 4,668 companies into a reliable, automated analytics pipeline, the data underwent a structured cleaning and preparation process. This stage focused on fixing data inconsistencies, handling missing files, and structuring the dataset for seamless integration between SQL and Power BI.
 
-Categorical fields, such as AI usage and industry classification, were also standardized to maintain consistency (e.g., ensuring uniform labels like “Yes/No”). Additionally, new calculated fields were created to support deeper analysis, including rates and performance indicators such as risk case rate, fraud detection rate, and revenue impact per engagement.
+The dataset such as; **Annual_P_L_1_final.xlsx**, **Annual_P_L_2_final.xlsx**, **Balance_Sheet_final.xlsx**, **cash_flow_statments_final.xls**, **ratios_1_final.xlsx**, **ratios_2_final.xlsx**, **Quarter_P_L_1_final.xlsx**,**Quarter_P_L_2_final.xlsx**,**other_metrics_final.xlsx**,**price_final.xlsx** was being cleaned using excel in order to remove the inconsistencies in the dataset such as line-break, spacing between text, improper text formating 
 
 The dataset was then structured into a clean and analysis-ready format, enabling efficient querying in SQL and seamless integration into Power BI for visualization. This preparation step ensured that all subsequent insights and conclusions were based on high-quality, reliable data.
 ### Exploratory Data Analysis
